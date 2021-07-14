@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>MOVIE_SOURCE</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+				<!-- One -->
+					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							<h1>SCORE AND RESPONSE</h1>
+							<table class="style1">
+								<tr>
+									<td>ID</td>
+									<td>NAME</td>
+									<td>NUM</td>
+									<td>SCORE</td>
+									<td>QUOTE</td>
+								</tr>
+								{% for x in data %}
+								<tr>
+									<td>{{x[0]}}</td>
+									<td>{{x[1]}}</td>
+									<td>{{x[2]}}</td>
+									<td>{{x[3]}}</td>
+									<td>{{x[4]}}</td>
+								</tr>
+								{% endfor %}
+							</table>
+
+						</div>
+						<div class="image">
+							<img src="static/images/banner.jpg" alt="" />
+						</div>
+					</section>
+
+
+				<!-- Six -->
+					<section class="wrapper style1 align-center">
+						<div class="inner">
+							<h2>ABOUT US</h2>
+							<p>Maybe you have interest in this web.Evenmore,you may wanna know us,the developers.Then,this part is just for you.Please allow us to introduce ourselves.</p>
+						</div>
+
+						<!-- Gallery -->
+							<div class="gallery style2 medium lightbox onscroll-fade-in">
+								<article>
+									<a href="static/images/gallery/fulls/01.jpg" class="image">
+										<img src="static/images/gallery/thumbs/01.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>An Cao</h3>
+										<p>The founder of this web.Work for main task</p>
+									</div>
+								</article>
+								<article>
+									<a href="static/images/gallery/fulls/02.jpg" class="image">
+										<img src="static/images/gallery/thumbs/02.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Oswald Lee</h3>
+										<p>Designer of this web.Responsible for the art</p>
+									</div>
+								</article>
+								<article>
+									<a href="static/images/gallery/fulls/03.jpg" class="image">
+										<img src="static/images/gallery/thumbs/03.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Maga Pan</h3>
+										<p>One to offer cool ideas and advice</p>
+									</div>
+								</article>
+								<article>
+									<a href="static/images/gallery/fulls/04.jpg" class="image">
+										<img src="static/images/gallery/thumbs/04.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Penguin</h3>
+										<p>The honorable and generous benefactor</p>
+									</div>
+								</article>
+								<article>
+									<a href="static/images/gallery/fulls/05.jpg" class="image">
+										<img src="static/images/gallery/thumbs/05.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Linghao Zhang</h3>
+										<p>Responsible for our adertisement and popularization </p>
+									</div>
+								</article>
+								<article>
+									<a href="static/images/gallery/fulls/06.jpg" class="image">
+										<img src="static/images/gallery/thumbs/06.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Trump Liu</h3>
+										<p>Translator and manger of our Twitter.</p>
+									</div>
+								</article>
+								<article>
+									<a href="static/images/gallery/fulls/07.jpg" class="image">
+										<img src="static/images/gallery/thumbs/07.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Ultrices Corbert</h3>
+										<p>An passionate netfriend who try our games and review them.</p>
+									</div>
+								</article>
+								<article>
+									<a href="static/images/gallery/fulls/08.jpg" class="image">
+										<img src="static/images/gallery/thumbs/08.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Sky Si</h3>
+										<p>A real and professional gamer who can even win in our games.</p>
+									</div>
+								</article>
+							</div>
+					</section>
+
+
+
+				<!-- Footer -->
+					<footer class="wrapper style1 align-center">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
+							<p>&copy; Untitled. Design: An Cao</a>.</p>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="static/assets/js/jquery.min.js"></script>
+			<script src="static/assets/js/jquery.scrollex.min.js"></script>
+			<script src="static/assets/js/jquery.scrolly.min.js"></script>
+			<script src="static/assets/js/browser.min.js"></script>
+			<script src="static/assets/js/breakpoints.min.js"></script>
+			<script src="static/assets/js/util.js"></script>
+			<script src="static/assets/js/main.js"></script>
+
+	</body>
+</html>

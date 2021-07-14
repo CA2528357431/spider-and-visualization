@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>caoan de web</title>
+</head>
+
+
+<body>
+    bro,welcome to my site<br>
+    my quote is : {{ quote }}<br>
+    it is {{ time }} now<br>
+    the guys who run this:<br>
+    {% for x in list %}
+    <li>{{x}}</li>
+    {%endfor%}
+
+
+
+
+    <table border="1">
+        <tr>
+            <td>power</td>
+            <td>name</td>
+        </tr>
+
+        {% for key,value in powerlist.items() %}
+
+
+            <tr>
+                <td>{{key}}</td>
+                <td>{{value}}</td>
+            </tr>
+        {% endfor %}
+
+    </table>
+
+
+    <form action={{url_for("hello_world4")}} method="POST">
+        <p>nickname:<input type="text" name="nickname"></p>
+        <p>account:<input type="text" name="account"></p>
+        <p>password:<input type="text" name="password"></p>
+
+        <p><input type="submit" value="login"></p>
+
+    </form>
+
+    <form action="/login" method="POST">
+        <p><input type="submit" value="visitor mode"></p>
+
+    </form>
+
+
+</body>
+
+
+</html>
